@@ -36,11 +36,18 @@
     <ul class="navbar-nav mr-auto">
     <?php
         foreach($nav_list as $site){
+            if($site==$title){
             ?>
             <li class="nav-item active">
             <a class="nav-link" href=<?php echo $site ?>><?php echo $site ?><span class="sr-only">(current)</span> </a>
           </li>
           <?php
+            } else {?>
+                <li class="nav-item">
+            <a class="nav-link" href=<?php echo $site ?>><?php echo $site ?><span class="sr-only">(current)</span> </a>
+          </li>
+          <?php
+            }
         }
     ?>
       <li class="nav-item dropdown">
@@ -53,9 +60,6 @@
           <div class="dropdown-divider"></div>
           <a class="dropdown-item" href="#">Something else here</a>
         </div>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="impressum">Impressum</a>
       </li>
     </ul>
     <form class="form-inline my-2 my-lg-0">
