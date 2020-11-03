@@ -2,7 +2,7 @@
 defined('BASEPATH') OR exit();
 class Testcontroller extends CI_Controller {
     public function index(){
-        echo "Hello Wrld!";
+        echo "Hello World!";
     }
     public function day($day){
         echo $day[0] . $day[1];

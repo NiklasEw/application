@@ -51,6 +51,7 @@ defined('BASEPATH') OR exit('No direct script access allowed');
 */
 
 $route['default_controller'] = 'pages/view';
+$route['data/(:any)'] = 'database/mydata/$1';
 $route['(:any)'] = 'pages/view/$1';
 
 $route['404_override'] = '';

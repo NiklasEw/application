@@ -55,7 +55,7 @@
           Dropdown
         </a>
         <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-          <a class="dropdown-item" href="#">Action</a>
+          <a class="dropdown-item" href="data/datapage">Database</a>
           <a class="dropdown-item" href="#">Another action</a>
           <div class="dropdown-divider"></div>
           <a class="dropdown-item" href="#">Something else here</a>
@@ -69,6 +69,7 @@
   </div>
 </nav>
 </br>
+<!--
 <div class="alert alert-success" role="alert">
   Nichts ist schiefgegangen!
 </div>
@@ -83,6 +84,7 @@
     Versteckt!
   </div>
 </div>
+-->
 
 
 
@@ -91,6 +93,10 @@
 </head>
 <body>
 <h1><?php echo $title ?></h1>
+
+<?php echo $content ?>
+
+</br>
 <?php echo $adress ?>
 <?php echo $tel ?>
 </br>
