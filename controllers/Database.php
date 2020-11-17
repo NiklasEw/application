@@ -17,4 +17,12 @@ class Database extends CI_Controller{
         $this->template->load('basic_template','Dataview/'.$page);
 
     }
+    function __construct(){
+        parent::__construct(); // calls the super constructor
+        $this->load->model('Db_model');
+        $query = $this->Db_model->get_Data();
+
+        #print_r($query);
+        
+        }
 }
