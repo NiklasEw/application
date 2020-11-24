@@ -92,13 +92,13 @@
 <title>CodeIgniter Tutorial</title>
 </head>
 <body>
-<h1><?php echo $title ?></h1>
+<h1><?php #echo $title ?></h1>
 
 <?php echo $content ?>
 
 </br>
-<?php echo $adress ?>
-<?php echo $tel ?>
+<?php #echo $adress ?>
+<?php #echo $tel ?>
 </br>
 <em>&copy; 2020</em>
 </body>

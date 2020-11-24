@@ -11,4 +11,12 @@ class Db_model extends CI_Model {
         return $query->result_array()[0];
     }
  }
+ public function create($name, $content,$rating){
+    $this->db->set('name', $name);
+    $this->db->set('content', $content);
+    echo "rating".$rating;
+    $this->db->set('rating',(int)$rating);
+    $this->db->insert('mytable');
+    return $this->db->insert_id();
+}
 }
