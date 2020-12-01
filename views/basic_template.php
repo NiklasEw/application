@@ -7,12 +7,16 @@
 
 
 
-<!-- Bootstrap CSS -->
+<!-- CSS -->
 <link rel="stylesheet" href="<?php echo base_url('assets/css/bootstrap.min.css');?>">
- <!-- Optional JavaScript -->
+<link rel="stylesheet" href="<?php echo base_url('assets/webfonts/fontawesome.min.css');?>" />
+
+
+ <!-- JavaScript -->
 <script src="<?php echo base_url('assets/js/jquery.min.js');?>"></script>
 <script src="<?php echo base_url('assets/js/popper.min.js');?>"></script>
 <script src="<?php echo base_url('assets/js/bootstrap.min.js');?>"></script>
+<script src="<?php echo base_url('assets/webfonts/fontawesome.min.js');?>"></script>
 
 
 
@@ -27,7 +31,7 @@
 
 
  <nav class="navbar navbar-expand-lg navbar-light bg-info">
-  <a class="navbar-brand" href="#">Navbar</a>
+  <a class="navbar-brand" href="/home">Navbar</a>
   <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
     <span class="navbar-toggler-icon"></span>
   </button>
@@ -39,12 +43,12 @@
             if($site==$title){
             ?>
             <li class="nav-item active">
-            <a class="nav-link" href=<?php echo $site ?>><?php echo $site ?><span class="sr-only">(current)</span> </a>
+            <a class="nav-link" href="/<?php echo $site ?>"><?php echo $site ?><span class="sr-only">(current)</span> </a>
           </li>
           <?php
             } else {?>
                 <li class="nav-item">
-            <a class="nav-link" href=<?php echo $site ?>><?php echo $site ?><span class="sr-only">(current)</span> </a>
+            <a class="nav-link" href="/<?php echo $site ?>"><?php echo $site ?><span class="sr-only">(current)</span> </a>
           </li>
           <?php
             }
@@ -52,10 +56,10 @@
     ?>
       <li class="nav-item dropdown">
         <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-          Dropdown
+          Mehr
         </a>
         <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-          <a class="dropdown-item" href="data/datapage">Database</a>
+          <a class="dropdown-item" href="/data/datapage">Database</a>
           <a class="dropdown-item" href="#">Another action</a>
           <div class="dropdown-divider"></div>
           <a class="dropdown-item" href="#">Something else here</a>

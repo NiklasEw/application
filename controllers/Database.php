@@ -37,5 +37,9 @@ class Database extends CI_Controller{
         $id = $this->Db_model->create($name,$content,$rating);
         echo $id;
     }
+    public function delete(){
+        $id = $this->input->post('id');
+        $this->Db_model->delete($id);
+    }
     
 }
