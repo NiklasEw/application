@@ -1,4 +1,5 @@
 <?php
+
 defined('BASEPATH') OR exit();
 class Database extends CI_Controller{
     public function mydata($page='datapage'){
@@ -28,6 +29,7 @@ class Database extends CI_Controller{
         $this->load->model('Db_model');
 
         #print_r($query);
+        #moin
         
     }
     
