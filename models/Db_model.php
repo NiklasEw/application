@@ -22,5 +22,11 @@ class Db_model extends CI_Model {
     public function delete($id){
         $this->db->where('id', intval($id));
         $this->db->delete('mytable');
-        }
+    }
+    public function update($id, $name, $content){
+        $this->db->set('name', $name);
+        $this->db->set('content', $content);
+        $this->db->where('ID', intval($id));
+        $this->db->update('mytable');
+    }
 }

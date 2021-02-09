@@ -12,6 +12,8 @@ class Database extends CI_Controller{
         #$testquery = $this->Db_model->get_Data(1);//Erste Eintrag des Arrays der Datenbank
         #print_r($testquery);//Einfaches Printen, des kompletten Arrays
         $data['query'] = $this->Db_model->get_Data();
+        
+        
         $this->load->library('template');
         $this->template->set('title', ucfirst($page));
         $this->template->set('nav', 'navigation stuff');
@@ -40,6 +42,13 @@ class Database extends CI_Controller{
     public function delete(){
         $id = $this->input->post('id');
         $this->Db_model->delete($id);
+    }
+
+    public function update(){
+        $name = $this->input->post('name');
+        $content = $this->input->post('content');
+        $id=$this->input->post('id');
+        $this->Db_model->update($id,$name,$content);
     }
     
 }

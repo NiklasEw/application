@@ -75,7 +75,7 @@ $query_builder = TRUE;
 
 $db['default'] = array(
 	'dsn'	=> '',
-	'hostname' => 'sqlite:D:\usbwebserver\CI3\assets\db\database.db',
+	'hostname' => 'sqlite:F:\usbwebserver\CI3\assets\db\database.db',
 	'username' => '',
 	'password' => '',
 	'database' => '',
