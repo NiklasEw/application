@@ -28,7 +28,7 @@ class Database extends CI_Controller{
         $this->load->model('Db_model');
 
         #print_r($query);
-        
+        //hi
     }
     
     public function create(){
