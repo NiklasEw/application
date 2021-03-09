@@ -29,8 +29,11 @@ class Database extends CI_Controller{
         $this->load->model('Db_model');
 
         #print_r($query);
+<<<<<<< HEAD
         #moin
         
+=======
+>>>>>>> 41b05b9a5ef8b4b527a85748cc189b38abdc26ba
     }
     
     public function create(){
